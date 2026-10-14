@@ -2,7 +2,7 @@ package com.shpp.p2p.cs.kbondarovich.assignment1;
 
 import com.shpp.karel.KarelTheRobot;
 
-public class assignment1number4 extends KarelTheRobot {
+public class Assignment1Part4 extends KarelTheRobot {
 
     /*
      * Precondition: Karel is in the center cell of the first reactor element.

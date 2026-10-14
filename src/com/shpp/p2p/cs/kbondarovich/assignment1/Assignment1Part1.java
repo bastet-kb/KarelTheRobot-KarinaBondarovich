@@ -2,7 +2,7 @@ package com.shpp.p2p.cs.kbondarovich.assignment1;
 
 import com.shpp.karel.KarelTheRobot;
 
-public class assignment1number1 extends KarelTheRobot {
+public class Assignment1Part1 extends SuperKarel {
     /*
      * Precondition: Karel is at his starting position
      * Result: Karel repaired all columns
@@ -33,21 +33,16 @@ public class assignment1number1 extends KarelTheRobot {
             } else {
                 move();
             }
-
-
         }
         if (noBeepersPresent()) {
             putBeeper();
         }
-
         turnAround();
         while (frontIsClear()) {
             move();
-
         }
         turnLeft();
     }
-
 
     /* Precondition: Karel is facing east at the base of the just repaired column
      * Result: Karel made 4 steps and is stood on the 5th cell.
@@ -56,16 +51,6 @@ public class assignment1number1 extends KarelTheRobot {
         for (int i = 0; i < 4; i++) {
             move();
         }
-
     }
 
-
-    /* Precondition: None
-     * Result: Karel turned to opposite side of the starting position.
-     */
-    private void turnAround() throws Exception {
-        turnLeft();
-        turnLeft();
-
-        }
-    }
+}
