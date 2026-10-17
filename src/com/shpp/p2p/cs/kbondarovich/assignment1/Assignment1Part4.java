@@ -1,6 +1,8 @@
 package com.shpp.p2p.cs.kbondarovich.assignment1;
 
-public class assignment1part4additional extends SuperKarel {
+import com.shpp.karel.KarelTheRobot;
+
+public class Assignment1Part4 extends SuperKarel {
 
     /*
      * Precondition: Karel is in the center cell of the first reactor element.
@@ -22,11 +24,6 @@ public class assignment1part4additional extends SuperKarel {
                 cleanTheRightElement();
             }
             // Check whether there is a new element and go into it.
-            goToTheNextElement();
-        }
-        // This part will proceed if the element's central cell has a beeper
-        // (no cleaning needed)
-        while (beepersPresent() && frontIsClear()) {
             goToTheNextElement();
         }
     }
@@ -90,6 +87,8 @@ public class assignment1part4additional extends SuperKarel {
         }
     }
 }
+
+
 
 
 
